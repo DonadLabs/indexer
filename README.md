@@ -21,3 +21,7 @@ pnpm codegen
 - [Node.js (use v18 or newer)](https://nodejs.org/en/download/current)
 - [pnpm (use v8 or newer)](https://pnpm.io/installation)
 - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+
+### Footnote
+
+random commit to trigger deployment
