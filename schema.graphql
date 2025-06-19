@@ -1,0 +1,26 @@
+type DonadManager_Donated {
+  id: ID!
+  fundraiseId: BigInt!
+  donor: String!
+  amount: BigInt!
+  timestamp: BigInt!
+}
+
+type DonadManager_FundraisingRegistered {
+  id: ID!
+  fundraiseId: BigInt!
+  title: String!
+  description: String!
+  targetAmount: BigInt!
+  targetDate: BigInt!
+}
+
+type DonadManager_WithdrawalMade {
+  id: ID!
+  fundraiseId: BigInt!
+  amount: BigInt!
+  remarks: String!
+  withdrawalAddress: String!
+  timestamp: BigInt!
+}
+

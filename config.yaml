@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: indexer
+networks:
+- id: 10143
+  start_block: 21989271
+  contracts:
+  - name: DonadManager
+    address:
+    - 0x5890deC57407a0E37b15c2C351115fa3827dF277
+    handler: src/EventHandlers.ts
+    events:
+    - event: Donated(uint256 indexed fundraiseId, address indexed donor, uint256 amount, uint256 timestamp)
+    - event: FundraisingRegistered(uint256 indexed fundraiseId, string title, string description, uint256 targetAmount, uint256 targetDate)
+    - event: WithdrawalMade(uint256 indexed fundraiseId, uint256 amount, string remarks, address withdrawalAddress, uint256 timestamp)
+unordered_multichain_mode: true
